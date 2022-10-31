@@ -1,0 +1,17 @@
+[package]
+name = "game_server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = { version = "4.1.0", features = ["rustls"] }
+actix-cors = "0.6.3"
+mutex = "0.1.0"
+rand = "0.8.5"
+lazy_static="1.4.0"
+serde_json = "1.0.83"
+serde = { version = "1.0.143", features = ["derive"] }
+hyper = { version = "0.14.20", features = ["full"] }
+tokio = { version = "1.20.1", features = ["full"] }
